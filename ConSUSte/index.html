@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title> ConSUSte </title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="home.css">
+    <script type="text/javascript" src="login.js"></script>
+</head>
+<body>
+    <div class="interface">
+        <header id="cabecalho">
+            <div id="logo">
+                <h1>ConSUS<img src="imagens/logoSite.png" class="fotoLogo">e</h1>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li id="aberto"><a href="index.html">Home</a></li> 
+                    <li id="restoLi"><a href="cadastra.html">Cadastre-se</a></li> 
+                    <li id="restoLi2"><a href="hospitais.html">Hospitais</a></li> 
+                    <li id="restoLi3"><a href="laboratorios.html">Laboratórios</a></li>
+                </ul>
+            </nav>
+        </header><br/><br/><br/><br/>
+        <div class="cLogin">
+            <form id = "frEntra" name="formLogin" method="post"  action = "projrtoUsuario.html" /><br/>
+            <div id="tipo">
+                <label>Tipo</label><br/>
+                <select id = "opt" width="100px">
+				    <option disabled selected value = "">Tipo de Usuário</option>
+                    <option name="tTipo" id="chosp" value ="hospital">Hospital</option>
+                    <option name="tTipo" id="clab" value = "lab">Laboratório</option>
+                    <option name="tTipo" id="cpaciente" value = "paci">Paciente</option>
+                </select>
+            </div>
+            <div id="usuario">
+                <label name="tUsuario">Usuário</label><br/>
+                <input type="text" name="tUsuario" id="cUsuario" />
+            </div>
+            <div id="senha">
+                <label name="tsenha">Senha</label><br/>
+                <input type="password" name="tSenha" id="cSenha" />
+            </div>
+            <div id="entrar">
+			    <input id="buto2" type = "submit" onclick="return validarLogin()" name = "buto" value= "&rarr; &nbsp;&nbsp;Entrar"/>
+            </div>
+            </form>
+        </div><br/><br/><br/><br/>
+		<div id="home">
+			<h1 id = "dd"><center> Quem Somos? </center></h1>
+			<center><p id="paragrafo"> Aqui você pode aproveitar nossa exclusividade de agendamento voltado para o SUS. <br>
+				Criamos esse site para facilitar a vida de você que quer um atendimento especial em alguma área da saúde. <br>
+				APROVEITE!
+			</p></center>
+		</div>
+    </div>
+</body>
+</html>

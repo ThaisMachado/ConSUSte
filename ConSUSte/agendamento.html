@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title> Agendamento de Consulta</title>
+    <link rel = "stylesheet" href = "barraLateral.css"/> 
+    <link rel = "stylesheet" href = "agenForm.css"/> 
+    <link rel = "stylesheet" href = "menuDentro.css"/> 
+	 <script type="text/javascript" src="agendamento.js"></script>
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <div id="logo">
+                    <center><h1>ConSUS<img src="imagens/logoSite.png" class="fotoLogo">e</h1></center>
+            </div>
+        </header>
+        <header id="cabecalho2">
+            <div id="cab2">
+                <div id="loginOn">
+                    <label>Olá, </label>
+                </div>
+                <button id="saida">
+                    |&nbsp;|&#8678;</button>
+            </div>
+        </header>
+        <div id="corpo">
+        <div id = "listaLateral">
+            <ol>
+               <li id="item1"><a class = "listaL" href = "projrtoUsuario.html">Agendar &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&#9656 </a></li>
+               <li class="resto"><a class = "listaL" href = "AlterarCad.html">Alterar Cadastro &emsp;&ensp;&ensp;&#9656 </a></li>
+                <li class="resto"><a class = "listaL" href = "consultar.html">Consultar Agendamentos &#9656 </a></li>
+                <li class="resto"><a class = "listaL" href = "exames.html">Consultar Exames &emsp;&ensp;&ensp;&#9656 </a></li>
+                <li class="resto"><a class = "listaL" href = "">Hospitais &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&#9656 </a></li>
+	           <li class="resto"><a class = "listaL" href = "Mensagem.html">Mensagem &emsp;&ensp;&nbsp;&#9656 </a></li>
+            </ol>	
+        </div>
+        <div id="formulario">
+            <form id="agend"  name="formAgend" method="post"  action = "agendamento.html" >
+                <legend>Ficha de Agendamento</legend><br/><br/>
+                <label>Especialista</label>
+                <select name = "especialista" id = "especialista">
+                    <option selected value = "" >Escolha um Médico...</option>
+                    <option value = "cirurgiao">Cirurgião</option>
+                    <option value = "clinicoG" >Clínico Geral</option>
+                    <option value = "ginicologista">Ginecologista</option>
+                    <option value = "pediatra">Pediatra</option>
+                    <option value = "urulogista">Urologista</option>
+                </select>
+                <br/><br/>
+                <label>Estado</label>
+                <select name = "estado" id = "estado">
+                    <option selected value = "">Escolha um Estado...</option>
+                    <option value ="am">AM</option>
+                </select>&emsp; <label>Cidade</label>
+                <select name ="cidade" id = "cidade">
+                    <option selected value = "">Escolha uma Cidade</option>
+                    <option value = "apui">Apuí</option>
+                    <option value = "labrea">Lábrea</option>
+                    <option value = "manaus">Manaus</option>
+                    <option value = "maues">Maués</option>
+                    <option value = "PF">Presidente Figueredo</option>
+                </select>
+                <br/><br/>
+                <label>Hospital</label>
+                <select name = "hospital" id = "hospital">
+                    <option selected value ="">Escolha um Hospital...</option>
+                    <option value = "caic">Caic</option>
+                    <option value = "hospBP">Hospital Beneficente Portuguesa</option>
+                    <option value = "hosp28">Hospital 28 de Agosto</option>
+                </select><br/><br/>
+                <label>Horário</label>
+                <select name = "horario" id = "horario">
+                    <option selected value ="">Escolha um Horário...</option>
+                    <option value = "manha">Manhã</option>
+                    <option value = "tarde">Tarde</option>
+                    <option value = "noite">Noite</option>
+                </select>&emsp;&emsp;&emsp;
+                <label>Data</label>
+                <input name = "data" id = "data" type="date"/><br/><br/>
+                <label>Identidade:</label>
+                <input name = "identidade" id = "identidade" type="number"/>&emsp; ou &emsp;
+                <label>Cartão do SUS:</label>
+                <input name = "cartao" id = "cartao" type="number"/><br/><br/>
+                <label>Prioridade?</label>
+                <label><input  type="radio" name="priori" value="Sim"/>Sim</label>
+                <label><input type="radio" name="priori" value="Não"/>Não</label>
+                <br/><br/>
+                <label>Qual? <input name = "qualPri" type="text" id="qualPri"/></label>
+                <div id="btnEfetua"><br/><br/><br/>
+                    <button id="voltar"><a href="projrtoUsuario.html">&#9756;<br/></a></button>
+                    <center><input id="buto1" type = "submit" onclick="return validarAgend()" name = "buto" value = "&#10000; &emsp;Efetuar Agendamento"/></center>
+                </div>
+        </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html> 

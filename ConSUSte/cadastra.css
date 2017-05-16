@@ -1,0 +1,58 @@
+section{
+    margin-left: 200px;
+    width: 440px;
+    margin-top: 70px;
+    padding: 5px;
+}
+form#cadastra input{
+    width: 290px;
+    height: 30px;
+    margin-left: 50px;
+    background-color:white; 
+    padding-left: 10px;
+    border: 0px #F0F8FF solid;
+}
+form#cadastra select{
+    width: 300px;
+    height: 30px;
+    margin-left: 50px;
+}
+#cInst select:invalid {
+  color: gray;
+}
+input#buto1{
+    border: 2px #87CEFA solid;
+    background-color: white ;
+    width: 200px;
+    color: #87CEFA;
+    padding: 4px;
+}
+input#buto1:hover{
+    background-color: #87CEFA;
+    color: white;
+    font-style:italic;
+}
+div.cadastro{
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+li#aberto a{
+    color: blue; 
+    padding-bottom: 45px;
+    border-bottom: 3px blue solid;
+}
+
+li#restoLi a:hover, li#restoLi2 a:hover, li#restoLi3 a:hover{
+    padding-bottom: 45px;
+    border-bottom: 3px blue solid;
+    color: blue;
+}
+select:invalid { 
+    color: gray; 
+}
+select#genero{
+    border:none;
+}
+option{
+    color: black;
+}

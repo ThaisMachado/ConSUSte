@@ -1,0 +1,28 @@
+td, th{
+    border-bottom: 1px black solid;
+    border-top: 1px gray solid;
+    text-align: center;
+    font-size: 12pt;
+}
+th{
+    background-color: white;
+    color: rgba(0, 191,255,.7);
+}
+legend{
+    font-size: 20pt;
+    font-weight: bold;
+    font-style: oblique;
+    position: relative;
+    left: 160px;
+    border-bottom: none;
+    width: 200px;
+}
+div#consulteAgen{
+    display: block;
+    width: 700px;
+    height: 350px;
+	position: relative;
+	right: 230px;
+	bottom: -40px;
+    float: right;
+}

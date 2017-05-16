@@ -1,0 +1,28 @@
+div#interface{
+	width: 1300px;
+    height: 800px;
+}
+td{
+	text-align: center;
+}
+p {
+	color: red;
+}
+td.element:hover{
+	background-color: white;
+}
+
+td.element{
+	padding: 5px;
+}
+div#calendario {
+	display: block;
+	position: relative;
+	right: 400px;
+	bottom: -40px;
+    float: right;
+}
+CAPTION{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}

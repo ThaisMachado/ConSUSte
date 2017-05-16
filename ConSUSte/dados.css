@@ -1,0 +1,35 @@
+button#fnlz{
+    border: none;
+    padding: 6px;
+    margin-left: 430px;
+    border: 2px #87CEFA solid;
+    width: 170px;
+    padding: 4px;
+    background-color: #87CEFA;
+    color: white;
+}
+.formCadAlt{
+    display: block;
+	position: relative;
+	bottom: -40px;
+    left: 400px;
+    padding: 30px;
+    border:10px rgba(0, 191, 255,.15) dashed;
+    background-color: white;
+    width: 600px;
+}
+section#formulario{
+    position: relative;
+    left: -200px;
+}
+input#cUsuario, input#cSenha, input#cEmail, input#cTel{
+    margin-left:260px;
+}
+select:invalid, code{ 
+    color: gray; 
+}
+legend{
+    font-size: 20pt;
+    font-weight: bold;
+    font-style: oblique;
+}

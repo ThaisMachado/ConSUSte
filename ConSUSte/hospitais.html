@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Hospitais</title>
+    <link rel="stylesheet" href="hospitais.css">
+    <link rel="stylesheet" href="menu.css">
+    <script type="text/javascript" src="login.js"></script>
+</head>
+<body>
+    <div class="interface">
+        <header id="cabecalho">
+             <div id="logo">
+                <h1>ConSUS<img src="imagens/logoSite.png" class="fotoLogo">e</h1>
+            </div>       
+            <nav id="menu">
+                <ul>
+                    <li id="restoLi"><a href="index.html">Home</a></li> 
+                    <li id="restoLi2"><a href="cadastra.html">Cadastre-se</a></li> 
+                    <li id="aberto"><a href="hospitais.html">Hospitais</a></li> 
+                    <li class="restoLi3"><a href="laboratorios.html">Laboratórios</a></li>
+                </ul>
+            </nav>
+        </header><br/><br/><br/><br/>
+        <div class="cLogin">
+           <form id = "frEntra" name="formLogin" method="post"  action = "index.html" /><br/>
+            <div id="tipo">
+                <label>Tipo</label><br/>
+                <select id = "opt" width="100px">
+				    <option disabled selected value = "">Tipo de Usuário</option>
+                    <option name="tTipo" id="chosp" value ="hospital">Hospital</option>
+                    <option name="tTipo" id="clab" value = "lab">Laboratório</option>
+                    <option name="tTipo" id="cpaciente" value = "paci">Paciente</option>
+                </select>
+            </div>
+            <div id="usuario">
+                <label name="tUsuario">Usuário</label><br/>
+                <input type="text" name="tUsuario" id="cUsuario" />
+            </div>
+            <div id="senha">
+                <label name="tsenha">Senha</label><br/>
+                <input type="password" name="tSenha" id="cSenha" />
+            </div>
+           <div id="entrar">
+                <input id="buto2" type = "submit" onclick="return validarLogin()" name = "buto" value= "&rarr; &nbsp;&nbsp;Entrar"/>
+            </div>
+            </form>
+        </div><br/><br/><br/><br/>
+        </div>
+    <div id="tabelas">
+        <table align="center">
+        <caption align="center">Amazonas</caption>
+        <tr>
+            <td><a href="">Apuí</a></td>
+            <td><a href="">Lábrea</a></td>
+            <td><a href="">Manaus</a></td>
+            <td><a href="">Maués</a></td>
+            <td><a href="">Presidente Figeuriredo</a></td>
+        </tr>
+
+    </table>
+	</div>
+    </div>
+</body>
+</html>
+    
+    
+ 

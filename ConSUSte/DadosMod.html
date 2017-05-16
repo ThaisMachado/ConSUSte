@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset = "utf-8">
+    <title> Alterar Dados </title>
+    <link rel = "stylesheet" href = "dados.css"/> 
+    <link rel = "stylesheet" href = "barraLateral.css"/> 
+    <link rel = "stylesheet" href = "menuDentro.css"/>
+</head>
+<body>
+<div id = "interface">
+<header id="cabecalho">
+        <div id="logo">
+            <center><h1>ConSUS<img src="imagens/logoSite.png" class="fotoLogo">e</h1></center>
+        </div>
+</header>
+<header id="cabecalho2">
+        <div id="cab2">
+                <div id="loginOn">
+                    <label>Olá, </label>
+                </div>
+                <a href="index.html"><button id="saida">
+                    |&nbsp;|&#8678;</button></a>
+         </div>
+</header>
+<div id="corpo">
+    <div id = "listaLateral">
+            <ol>
+               <li class="resto"><a class = "listaL" href = "projrtoUsuario.html">Agendar &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&#9656 </a></li>
+	           <li id="item1"><a class = "listaL" href = "AlterarCad.html">Alterar Cadastro &emsp;&ensp;&nbsp;&#9656 </a></li>
+               <li class="resto"><a class = "listaL" href = "consultar.html">Consultar Agendamentos &#9656 </a></li>
+                <li class="resto"><a class = "listaL" href = "exames.html">Consultar Exames &emsp;&ensp;&ensp;&#9656 </a></li>
+	           <li class="resto"><a class = "listaL" href = "">Hospitais &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&#9656 </a></li>
+	           <li  class="resto"><a class = "listaL" href = "Mensagem.html">Mensagem &emsp;&ensp;&nbsp;&#9656 </a></li>
+	           
+            </ol>	
+    </div>
+    <div class="formCadAlt">
+            <section id="formulario" name = "formCad">
+                <legend>Atualizar Dados</legend>
+                <br/><br/>
+                <form id="cadastra" method="post" onsubmit="validarCad()">
+                    <input name="tNome" id="cNome"  type="text" placeholder="  Nome Completo *"/><br/><br/>
+                    <label><code>Data de Nascimento</code><br/> <input name="tNasc" id="cNasc" type="date"/></label><br/><br/>
+                    <input name="tRg" id="cRg" type="text" placeholder=" Identidade*"><input name="tSus" id="cSus" type="number" placeholder=" Cartão do SUS"><br/><br/>
+                    <input name="tEndereco" id="cEndereco" type="text" placeholder="Endereço *"/><br/><br/>
+                <select id="genero"required>
+                    <option value="" disabled selected hidden>Gênero*</option>
+                    <option value="" disabled></option>
+                    <option value="0">Feminino</option>
+                    <option value="1">Masculino</option>
+                </select><br/><br/>
+                    <input name="tEmail" id="cEmail" type="email" placeholder="E-mail"/><br/><br/>
+                    <input name="tTel" id="cTel" type="tel" placeholder="Telefone"/><br/><br/>
+                    <input name="tUsuario" id="cUsuario" type="text" placeholder="Nome de Usuário*"/><br/><br/>
+                    <input name="tSenha" id="cSenha" type="password" placeholder="Senha*" /><br/><br/>
+                </form><br/><br/>
+                <center><button id="fnlz">&rarr; &nbsp;&nbsp;Finalizar Alterações</button></center>
+            </section>
+        </div>
+</div>
+</div>
+</div>				
+</body>
+</html>

@@ -1,0 +1,62 @@
+div#interface{
+	width: 1400px;
+    height: 800px;
+}
+ol{
+	list-style: none;
+}
+li{
+	color: blue;
+	margin: 10px;
+    padding: 5px;	
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+}
+li:hover{
+	background-color: #F0F8FF;
+	width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: white;
+}
+li#linhaS{
+	text-decoration: none;
+}
+div#listaLateral{
+    width: 260px; 
+	height: 350px;
+	display: block;
+    padding-left: -30px;
+    margin-left: 40px;
+    float: left;
+    background-color: white;
+}
+a.listaL{
+	color: black;
+    font-weight: bold;
+}
+div#entrar{
+    width:150px;
+}
+li.resto a:hover{
+    color: rgb(0, 191, 255);
+}
+li#item1{
+    background-color: #F0F8FF;
+    margin-right: -10px;
+    margin-left: -40px;
+    padding-left: 58px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+li#item1 a{
+    font-weight: bold;
+    color: rgb(0, 191, 255);
+    width: 200px;
+    border-bottom: white;
+}

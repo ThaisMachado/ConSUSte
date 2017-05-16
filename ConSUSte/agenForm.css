@@ -1,0 +1,41 @@
+div#formulario{
+    display: block;
+	position: relative;
+	right: 400px;
+	bottom: -40px;
+    float: right;
+    padding: 30px;
+    border:10px rgba(0, 191, 255,.15) dashed;
+    background-color: white;
+}
+legend{
+    font-size: 20pt;
+    font-weight: bold;
+    font-style: oblique;
+}
+label{
+    font-size-adjust: auto;
+}
+input#buto1{
+    border: 2px #87CEFA solid;
+    width: 200px;
+    padding: 4px;
+    background-color: #87CEFA;
+    color: white;
+}
+input#buto1:hover{
+    background-color: white ;
+    color: #87CEFA;
+    font-style:italic;
+}
+button#voltar{
+    font-size:30pt;
+    border: none;
+    background-color: white ;
+    width: 50px;
+    color: #87CEFA;
+    padding: 4px;
+}
+button#voltar:hover{
+    background-color: white;
+}
